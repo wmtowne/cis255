@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<style>
+			p{
+			color: blue;
+			text-align: center;
+		}
+			#myID{
+			color: red;
+			text-align: right;
+}
+			.myClass{
+			color: green;
+			text-align: left;
+			font-size: 20px;
+}
+			span.wowzer{
+			color: brown;
+}
+			.fun{
+			color: red;
+}
+			.times{
+			font-size: 25px;
+}
+
+			h2, h3, h4{
+			color: yellow;
+			background: black;
+			font-size: 20px;
+	}
+	
+	.change{
+		color: yellow;
+		background: blue;
+		height: 100px;
+		
+	}
+	
+	.Comm{
+			color: green;
+			font-size: 25px;
+			/*text-align: right*/
+		}
+		
+	.Button2{
+			color: green;
+			background-color: blue;
+			width: 20px;
+			height: 20px;
+	}
+	body{
+		background-image: url("E:\Bennu\CHADDERBOX.jpg"); 
+	}
+	table.eg9{
+		border: 5px solid green;
+		background-color: blue;
+	}
+	td.eg9{
+		border: 5px solid green;
+	}
+		</style>
+	</head>
+	<body>
+		<h1>Example 1</h1>
+		<p>Hello World!</p>
+		<p>This is example 1, but with different text!</p>
+		<h1>Example 2</h1>
+		<p>This text is not affected by the style because it is not assigned the id "myID" (but the p{} selector still applies)</p>
+		<p id="myID">However, this text is affected by the style becuase it is assigned the id "myID"</p>
+		<h1 class="myClass">Example 3</h1>
+		<p class = "myClass">This paragraph element belongs to the class myClass. So does the header "Example 3" so both are affected.</p>
+		<p>This paragraph is not affected by the class myClass because its class attribute is not assigned to "myClass"</p>
+		<h1>Example 4</h1>
+		<p>You can be more specific with CSS than just using a class selector. You can also specifiy specific html elements that are
+			part of that class to be affected like in the code below. both are part of the class "wowzer" but only the span element is affected.
+			because the selector in the style block is span.wowzer.</p>
+			<p class="wowzer">Not affected. Not affected. Not affected. <span class="wowzer">Affected.</span> Not Affected.</p>
+		<h1>Example 5</h1>
+		<p>This example is pretty cool. An html element can refer to two classes with the class attribute.</p>
+		<p class="fun times">This p element is affected by two classes: fun and times. fun changes the color, times changes the font size.</p>
+		<h1>Example 6</h1>
+		<p>If selectors are using the same style definitions, it is best to group them together to preserve space and minimize the code. Below, the h2, h3, and h4 elements are all styled by grouped selectors.</p>
+		<h2>We are all the same style! Black Background, yellow text, 20px font size :)</h2>
+		<h3>We are all the same style! Black Background, yellow text, 20px font size :)</h3>
+		<h4>We are all the same style! Black Background, yellow text, 20px font size :)</h4>
+		<h1>Example 7</h1>
+		<p>This example might be hard to visualize... literally. In CSS you can leave comments in code with the syntax /* some text */ just like in popular OOP languages like Java and C++</p>
+		<p class="Comm">In the selector for the class Comm, the style definition (text-align: right) is commented out so the browser pays it no attention.</p>
+		
+		<h1>Example 8</h1>
+		<p>In this example, we are changing the example using an external style sheet to an internal CSS "sheet". The elements will be apart of the "change" class.</p>
+		<div class="change">
+		<p class="change">This is text change by an internal style sheet. the background is also blue :)</p>
+		</div>
+		<h1>Example 9</h1>
+		<p>For this example we use internal style sheets to style the table below. The elements belong to the class "eg9". (and by further specification table.eg9 or td.eg9 we can style specific elements belonging to the class.)</p>
+		<table class="eg9">
+			<tr >
+				<td class="eg9">Cell 1</td>
+				<td class="eg9">Cell 2</td>
+				<td class="eg9">Cell 3</td>
+				<td class="eg9">Cell 4</td>
+			</tr>
+		</table>
+		<h1>Example 10</h1>
+		<p>And now for the last and final example! This example is whats known as inline styling. If an element contains inline styling and a selector in an internal style sheet, the inline style will take precedence.</p>
+		<button class="Button2" style="color: brown; width: 100px; height: 100px; background-color: yellow;">HIT ME</button>
+		
+	</body>
+</html>

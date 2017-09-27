@@ -1,0 +1,24 @@
+/* hey, this is just css! */
+
+h1, p{
+	
+	color: red;
+	
+}
+
+h3 {
+	color: blue;
+	
+	
+}
+
+h4{
+	color: green;
+	
+}
+
+p.YellowSyrup{
+	color: red;
+}
+
+/* Need .css extension */
